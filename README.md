@@ -11,17 +11,39 @@ You will learn how to build your own Alexa Skills that can be applied for e-heal
 - Blood Exam
 
 
-# ![Nursing Icon](/images/aws_new_logo.png "AWS Logo")
+# ![Nursing Icon](/images/aws_new_logo.png "AWS Logo") 
 
-## Prepare Alexa Developer Environment
+## 1.Prepare Alexa Developer Environment
+
 nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon 
 
-### Step #1
-nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon 
+### Step #1: log into Alexa Developer
+# ![Nursing Icon](/images/alexa-skill/01.png "instructions") 
 
-### Step #2
-nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon 
+### Step #2:
+# ![Nursing Icon](/images/alexa-skill/02.png "instructions") 
 
-### Step #3
-nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon nonon nono nno nonon 
+### Step #3: 
+# ![Nursing Icon](/images/alexa-skill/03.png "instructions") 
+
+### Step #4:
+# ![Nursing Icon](/images/alexa-skill/04.png "instructions") 
+
+### Step #5:
+# ![Nursing Icon](/images/alexa-skill/05.png "instructions") 
+
+### Step #6:
+# ![Nursing Icon](/images/alexa-skill/06.png "instructions") 
+
+### Step #7:
+# ![Nursing Icon](/images/alexa-skill/07.png "instructions") 
+
+### Step #8:
+# ![Nursing Icon](/images/alexa-skill/08.png "instructions") 
+
+### Step #9:
+# ![Nursing Icon](/images/alexa-skill/09.png "instructions") 
+
+### Step #10: 
+# ![Nursing Icon](/images/alexa-skill/10.png "instructions") 
 
