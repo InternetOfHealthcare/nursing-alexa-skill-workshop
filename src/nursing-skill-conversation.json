@@ -1,0 +1,72 @@
+{
+  "languageModel": {
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "DiastolicIntent",
+        "samples": [
+          "my diastolic pressure is {diastolic}"
+        ],
+        "slots": [
+          {
+            "name": "diastolic",
+            "type": "AMAZON.NUMBER"
+          }
+        ]
+      },
+      {
+        "name": "MyBloodPressureIntent",
+        "samples": [
+          "blood pressure",
+          "blood pressure input"
+        ],
+        "slots": []
+      },
+      {
+        "name": "MyNameIs",
+        "samples": [
+          "my name is {strname}"
+        ],
+        "slots": [
+          {
+            "name": "strname",
+            "type": "AMAZON.US_FIRST_NAME"
+          }
+        ]
+      },
+      {
+        "name": "SistolicIntent",
+        "samples": [
+          "my sistolic pressure is {sistolic}"
+        ],
+        "slots": [
+          {
+            "name": "sistolic",
+            "type": "AMAZON.NUMBER"
+          }
+        ]
+      },
+      {
+        "name": "WhatsMyNameIntent",
+        "samples": [
+          "what is my name",
+          "who am i",
+          "i'm drunk and forgot my name"
+        ],
+        "slots": []
+      }
+    ],
+    "invocationName": "nursing skill"
+  }
+}
