@@ -73,12 +73,16 @@ This first part you will learn how to create, configure and test a new Alexa Ski
 
 ### Step #16: Click in the Mic icon and start the conversation
 
-* Open nursing skill
-* My name is John
-* Blood Pressure Input
+* You>> Open nursing skill
+* Alexa>> Welcome to Alexa Nursing Skill, please tell me your name
+* You>> My name is <<Your Name>>
+* Alexa>> Welcome <<Your Name>>, you can ask me about your health
+* You>> Blood Pressure Input
+* Alexa>> What is your sistolic pressure <<Your Name>>
 * My sistolic pressure is 115
-* My diastolic poressure is 75
-
+* Alexa>> What is your diastolic pressure <<Your Name>>
+* You>> My diastolic poressure is 75
+* Alexa>> Thanks <<Your name>> 
 # ![Nursing Icon](/images/alexa-skill/16.png "instructions")
 
 
