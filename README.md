@@ -55,3 +55,18 @@ This first part you will learn how to create, configure and test a new Alexa Ski
 ### Step #12: Let's use our existing Lambda Function with this ARN
 # ![Nursing Icon](/images/alexa-skill/12.png "instructions") 
 
+### Step #13: Your skill configuration should be like this:
+# ![Nursing Icon](/images/alexa-skill/13.png "instructions")
+
+### Step #14: Time to test! Click "Go to Test Simulator"
+# ![Nursing Icon](/images/alexa-skill/14.png "instructions")
+
+### Step #15: Enable test for this skill
+# ![Nursing Icon](/images/alexa-skill/15.png "instructions")
+
+### Step #16: Click in the Mic icon and start the conversation
+# ![Nursing Icon](/images/alexa-skill/16.png "instructions")
+
+
+
+
