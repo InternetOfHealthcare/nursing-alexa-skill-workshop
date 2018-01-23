@@ -14,10 +14,10 @@ You will learn how to build your own Alexa Skills that can be applied for e-heal
 
 ## Table of Content
 
-### ![1. Create Alexa "Nursing Skill" using pre-configured Lambda](/images/alexa-skill/01.png "instructions")
-### ![2. Create your own DynamoDB database](/images/alexa-skill/01.png "instructions")
-### ![3. Create your own Lambda Function for Nursing Skill](/images/alexa-skill/01.png "instructions")
-### ![4. Extending Nursing Skill](/images/alexa-skill/01.png "instructions")
+1 [1. Create Alexa "Nursing Skill" using pre-configured Lambda](/images/alexa-skill/01.png "instructions")
+2 [2. Create your own DynamoDB database](/images/alexa-skill/01.png "instructions")
+3 [3. Create your own Lambda Function for Nursing Skill](/images/alexa-skill/01.png "instructions")
+4 [4. Extending Nursing Skill](/images/alexa-skill/01.png "instructions")
 
 ## 1.Create Alexa "Nursing Skill" using pre-configured Lambda / DynamoDB
 
@@ -73,11 +73,11 @@ This first part you will learn how to create, configure and test a new Alexa Ski
 
 ### Step #16: Click in the Mic icon and start the conversation
 
-Open nursing skill
-My name is John
-Blood Pressure Input
-MY sistolic pressure is 115
-My diastolic poressure is 75
+* Open nursing skill
+* My name is John
+* Blood Pressure Input
+* My sistolic pressure is 115
+* My diastolic poressure is 75
 
 # ![Nursing Icon](/images/alexa-skill/16.png "instructions")
 
