@@ -36,8 +36,7 @@ This first part you will learn how to create, configure and test a new Alexa Ski
 # ![Nursing Icon](/images/alexa-skill/07.png "instructions") 
 
 ### Step #7: Click on "Code Editor" 
-Copy and paste the code from 
-
+Copy this ![Nursing Icon](/src/nursing-skill-conversation.json "json") configuration file and paste to ... 
 
 # ![Nursing Icon](/images/alexa-skill/08.png "instructions") 
 
