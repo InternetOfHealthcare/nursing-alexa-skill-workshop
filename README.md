@@ -121,15 +121,47 @@ your own lambda function copying our code and then replace the Lambda ARN in you
 
 # ![Nursing Icon](/images/alexa-lambda/07.png "instructions") 
 
-### Step #7: Copy ![this NodeJS codej](/src/nursing-skill.js "js code") code and paste into code editor 
+### Step #7: Copy ![this NodeJS code](/src/nursing-skill.js "js code") and paste into code editor 
 
 # ![Nursing Icon](/images/alexa-lambda/07.png "instructions") 
 
-### Step #8: Click "Save Model" and then "Build Model"
+### Step #8: Click "Save"
 # ![Nursing Icon](/images/alexa-lambda/08.png "instructions") 
 
-### Step #9: Wait until finish..
+### Step #9: Now you can copy your own Lambda ARN to the clipboard
 # ![Nursing Icon](/images/alexa-lambda/09.png "instructions") 
 
+### Step #10: Open your Alexa Developer Console and click "Configuration"
+# ![Nursing Icon](/images/alexa-lambda/10.png "instructions") 
 
+### Step #11: Paste the new Lambda ARN
+# ![Nursing Icon](/images/alexa-lambda/09.png "instructions") 
 
+### Step #12: Before testing, we need to create your DynamoDB table!
+
+## 3.Create your own DynamoDB table
+
+To finish your Nursing Skill using youtr own Lambda Function you must create a DynamoDB table and 
+make sure that Lambda Function has the right permissions.
+
+### Step #1: 
+# ![Nursing Icon](/images/alexa-lambda/01.png "instructions") 
+
+### Step #2: 
+
+* Name: NursingSkill
+* Runtime: NodeJS 6.10
+* Role: Custom Role
+* It will open IAM console to create the role
+# ![Nursing Icon](/images/alexa-lambda/02.png "instructions") 
+
+### Step #3: 
+
+* IAM Role: lambda_basic_execution
+* Policy Name: Create new Role Policy
+* Click Allow
+
+# ![Nursing Icon](/images/alexa-lambda/03.png "instructions") 
+
+### Step #4: 
+# ![Nursing Icon](/images/alexa-lambda/04.png "instructions") 
