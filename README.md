@@ -40,5 +40,18 @@ This first part you will learn how to create, configure and test a new Alexa Ski
 
 # ![Nursing Icon](/images/alexa-skill/07.png "instructions") 
 
-### Step #8: Save the model and click on "Build"
+### Step #8: Click "Save Model" and then "Build Model"
 # ![Nursing Icon](/images/alexa-skill/08.png "instructions") 
+
+### Step #9: Wait until finish..
+# ![Nursing Icon](/images/alexa-skill/09.png "instructions") 
+
+### Step #10: Click "Configuration" to setup the Lambda Function
+# ![Nursing Icon](/images/alexa-skill/10.png "instructions") 
+
+### Step #11: We need to provide the Lambda Function ARN in Global Fields
+# ![Nursing Icon](/images/alexa-skill/11.png "instructions") 
+
+### Step #12: Let's use our existing Lambda Function with this ARN
+# ![Nursing Icon](/images/alexa-skill/12.png "instructions") 
+
