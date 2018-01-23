@@ -10,7 +10,6 @@ You will learn how to build your own Alexa Skills that can be applied for e-heal
 - Weight
 - Blood Exam
 
-
 # ![Nursing Icon](/images/aws_new_logo.png "AWS Logo") 
 
 ## 1.Create Alexa "Nursing Skill" using pre-configured Lambda / DynamoDB
@@ -35,8 +34,7 @@ This first part you will learn how to create, configure and test a new Alexa Ski
 ### Step #6: Click on "Launch Skill Builder" 
 # ![Nursing Icon](/images/alexa-skill/07.png "instructions") 
 
-### Step #7: Click on "Code Editor" 
-Copy this ![Nursing Icon](/src/nursing-skill-conversation.json "json") configuration file and paste to ... 
+### Step #7: Copy this ![json](/src/nursing-skill-conversation.json "json") configuration file and paste into code editor 
 
 # ![Nursing Icon](/images/alexa-skill/08.png "instructions") 
 
