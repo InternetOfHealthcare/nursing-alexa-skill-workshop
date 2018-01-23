@@ -34,12 +34,11 @@ This first part you will learn how to create, configure and test a new Alexa Ski
 # ![Nursing Icon](/images/alexa-skill/05.png "instructions") 
 
 ### Step #6: Click on "Launch Skill Builder" 
+# ![Nursing Icon](/images/alexa-skill/06.png "instructions") 
+
+### Step #7: Copy ![this json](/src/nursing-skill-conversation.json "json") configuration file and paste into code editor 
+
 # ![Nursing Icon](/images/alexa-skill/07.png "instructions") 
 
-### Step #7: Copy this ![json](/src/nursing-skill-conversation.json "json") configuration file and paste into code editor 
-
+### Step #8: Save the model and click on "Build"
 # ![Nursing Icon](/images/alexa-skill/08.png "instructions") 
-
-### Step #9: Save the model and click on "Build"
-# ![Nursing Icon](/images/alexa-skill/10.png "instructions") 
-
