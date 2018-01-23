@@ -109,16 +109,19 @@ your own lambda function copying our code and then replace the Lambda ARN in you
 
 # ![Nursing Icon](/images/alexa-lambda/03.png "instructions") 
 
-### Step #4: Click on "Start a Skill" 
+### Step #4: Configure the role in your function
 # ![Nursing Icon](/images/alexa-lambda/04.png "instructions") 
 
-### Step #5: Configure Skill Information
+### Step #5: Add Alexa Skill Kit trigger
 # ![Nursing Icon](/images/alexa-lambda/05.png "instructions") 
 
-### Step #6: Click on "Launch Skill Builder" 
-# ![Nursing Icon](/images/alexa-lambda/06.png "instructions") 
+### Step #6: Disable Skill ID verification
 
-### Step #7: Copy ![this json](/src/nursing-skill-conversation.json "json") configuration file and paste into code editor 
+* This way any skill can use trigger this Lambda. If you want to restrict you can pick you Alexa Nursing Skill ID and limit the execution for only one skill. 
+
+# ![Nursing Icon](/images/alexa-lambda/07.png "instructions") 
+
+### Step #7: Copy ![this NodeJS codej](/src/nursing-skill.js "js code") code and paste into code editor 
 
 # ![Nursing Icon](/images/alexa-lambda/07.png "instructions") 
 
@@ -127,9 +130,6 @@ your own lambda function copying our code and then replace the Lambda ARN in you
 
 ### Step #9: Wait until finish..
 # ![Nursing Icon](/images/alexa-lambda/09.png "instructions") 
-
-### Step #10: Click "Configuration" to setup the Lambda Function
-# ![Nursing Icon](/images/alexa-lambda/10.png "instructions") 
 
 
 
