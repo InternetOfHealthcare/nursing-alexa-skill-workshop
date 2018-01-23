@@ -14,7 +14,9 @@ You will learn how to build your own Alexa Skills that can be applied for e-heal
 
 ## 1.Create Alexa "Nursing Skill" using pre-configured Lambda / DynamoDB
 
-This first part you will learn how to create, configure and test a new Alexa Skill using a pre-existing Lambda function as back-end.
+This first part you will learn how to create, configure and test a new Alexa Skill using a pre-existing Lambda function as back-end. After this step you will have your first Healthcare Skill working and then you can create your own Lambda function to customize or extend this skill to store different types of biometric data.
+
+<<add an architecture overview>>
 
 ### Step #1: Navigate to Alexa Developer Website
 # ![Nursing Icon](/images/alexa-skill/01.png "instructions") 
@@ -38,9 +40,6 @@ This first part you will learn how to create, configure and test a new Alexa Ski
 
 # ![Nursing Icon](/images/alexa-skill/08.png "instructions") 
 
-### Step #9:
-# ![Nursing Icon](/images/alexa-skill/09.png "instructions") 
-
-### Step #10: 
+### Step #9: Save the model and click on "Build"
 # ![Nursing Icon](/images/alexa-skill/10.png "instructions") 
 
