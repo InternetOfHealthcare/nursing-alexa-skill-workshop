@@ -90,13 +90,23 @@ This first part you will learn how to create, configure and test a new Alexa Ski
 Now that we have our own skill using a pre-existing Lambda function that allows any skill to use it, you will learn how to create
 your own lambda function copying our code and then replace the Lambda ARN in your Alexa Nursing Skill.
 
-### Step #1: Create a new Lambda Function
+### Step #1: Create a new Lambda Function, click "New Function"
 # ![Nursing Icon](/images/alexa-lambda/01.png "instructions") 
 
-### Step #2: Enter the provided workshop credentials
+### Step #2: Choose "Author from scratch"
+
+* Name: NursingSkill
+* Runtime: NodeJS 6.10
+* Role: Custom Role
+* It will open IAM console to create the role
 # ![Nursing Icon](/images/alexa-lambda/02.png "instructions") 
 
-### Step #3: Click on "Alexa Skills Kit"
+### Step #3: Configure IAM role:
+
+* IAM Role: lambda_basic_execution
+* Policy Name: Create new Role Policy
+* Click Allow
+
 # ![Nursing Icon](/images/alexa-lambda/03.png "instructions") 
 
 ### Step #4: Click on "Start a Skill" 
