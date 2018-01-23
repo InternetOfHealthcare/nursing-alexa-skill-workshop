@@ -85,6 +85,41 @@ This first part you will learn how to create, configure and test a new Alexa Ski
 * Alexa>> Thanks <<Your name>> 
 # ![Nursing Icon](/images/alexa-skill/16.png "instructions")
 
+## 2.Create your own Lambda Function to your Alexa Skill
+
+Now that we have our own skill using a pre-existing Lambda function that allows any skill to use it, you will learn how to create
+your own lambda function copying our code and then replace the Lambda ARN in your Alexa Nursing Skill.
+
+### Step #1: Create a new Lambda Function
+# ![Nursing Icon](/images/alexa-lambda/01.png "instructions") 
+
+### Step #2: Enter the provided workshop credentials
+# ![Nursing Icon](/images/alexa-lambda/02.png "instructions") 
+
+### Step #3: Click on "Alexa Skills Kit"
+# ![Nursing Icon](/images/alexa-lambda/03.png "instructions") 
+
+### Step #4: Click on "Start a Skill" 
+# ![Nursing Icon](/images/alexa-lambda/04.png "instructions") 
+
+### Step #5: Configure Skill Information
+# ![Nursing Icon](/images/alexa-lambda/05.png "instructions") 
+
+### Step #6: Click on "Launch Skill Builder" 
+# ![Nursing Icon](/images/alexa-lambda/06.png "instructions") 
+
+### Step #7: Copy ![this json](/src/nursing-skill-conversation.json "json") configuration file and paste into code editor 
+
+# ![Nursing Icon](/images/alexa-lambda/07.png "instructions") 
+
+### Step #8: Click "Save Model" and then "Build Model"
+# ![Nursing Icon](/images/alexa-lambda/08.png "instructions") 
+
+### Step #9: Wait until finish..
+# ![Nursing Icon](/images/alexa-lambda/09.png "instructions") 
+
+### Step #10: Click "Configuration" to setup the Lambda Function
+# ![Nursing Icon](/images/alexa-lambda/10.png "instructions") 
 
 
 
