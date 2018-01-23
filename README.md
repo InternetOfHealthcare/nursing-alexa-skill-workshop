@@ -17,28 +17,28 @@ You will learn how to build your own Alexa Skills that can be applied for e-heal
 
 This first part you will learn how to create, configure and test a new Alexa Skill using a pre-existing Lambda function as back-end.
 
-### Step #1: log into Alexa Developer
+### Step #1: Navigate to Alexa Developer Website
 # ![Nursing Icon](/images/alexa-skill/01.png "instructions") 
 
-### Step #2:
+### Step #2: Enter the provided workshop credentials
 # ![Nursing Icon](/images/alexa-skill/02.png "instructions") 
 
-### Step #3: 
+### Step #3: Click on "Alexa Skills Kit"
 # ![Nursing Icon](/images/alexa-skill/03.png "instructions") 
 
-### Step #4:
+### Step #4: Click on "Start a Skill" 
 # ![Nursing Icon](/images/alexa-skill/04.png "instructions") 
 
-### Step #5:
+### Step #5: Configure Skill Information
 # ![Nursing Icon](/images/alexa-skill/05.png "instructions") 
 
-### Step #6:
-# ![Nursing Icon](/images/alexa-skill/06.png "instructions") 
-
-### Step #7:
+### Step #6: Click on "Launch Skill Builder" 
 # ![Nursing Icon](/images/alexa-skill/07.png "instructions") 
 
-### Step #8:
+### Step #7: Click on "Code Editor" 
+Copy and paste the code from 
+
+
 # ![Nursing Icon](/images/alexa-skill/08.png "instructions") 
 
 ### Step #9:
