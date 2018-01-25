@@ -85,7 +85,7 @@ This first part you will learn how to create, configure and test a new Alexa Ski
 * Alexa>> Thanks <<Your name>> 
 # ![Nursing Icon](/images/alexa-skill/16.png "instructions")
 
-## [2.Create your own Lambda Function to your Alexa Skill](#p2)
+## 2.Create your own Lambda Function to your Alexa Skill
 
 Now that we have our own skill using a pre-existing Lambda function that allows any skill to use it, you will learn how to create
 your own lambda function copying our code and then replace the Lambda ARN in your Alexa Nursing Skill.
