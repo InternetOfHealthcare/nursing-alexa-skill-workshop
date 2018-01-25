@@ -24,7 +24,7 @@ You will learn how to build your own Alexa Skills that can be applied for e-heal
 - Blood Exam
 
 
-![logo](/images/aws_new_logo.png) {style="text-align:center"}
+-> ![logo](/images/aws_new_logo.png) <-
 
 ## Table of Content
 
