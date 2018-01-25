@@ -14,10 +14,10 @@ You will learn how to build your own Alexa Skills that can be applied for e-heal
 
 ## Table of Content
 
-### [1. Create Alexa "Nursing Skill" using pre-configured Lambda](#p1)
-### [2. Create your own DynamoDB database](#p2)
-### [3. Create your own Lambda Function for Nursing Skill](#p3)
-### [4. Extending Nursing Skill](#p4)
+### [1. Create Alexa "Nursing Skill" using pre-configured Lambda](.#p1)
+### [2. Create your own DynamoDB database](.#p2)
+### [3. Create your own Lambda Function for Nursing Skill](.#p3)
+### [4. Extending Nursing Skill](.#p4)
 
 ## 1.Create Alexa "Nursing Skill" using pre-configured Lambda / DynamoDB
 
