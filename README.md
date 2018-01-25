@@ -14,12 +14,12 @@ You will learn how to build your own Alexa Skills that can be applied for e-heal
 
 ## Table of Content
 
-### [1. Create Alexa "Nursing Skill" using pre-configured Lambda](#part-1)
-### [2. Create your own DynamoDB database](#part-2)
-### [3. Create your own Lambda Function for Nursing Skill](#part-3)
-### [4. Extending Nursing Skill](#4customize-nursing-skill)
-#### Part 1
-## 1.Create Alexa "Nursing Skill" using pre-configured Lambda / DynamoDB
+### [1. Create Alexa "Nursing Skill" using pre-configured Lambda](#1create-alexa-nursing-skill)
+### [2. Create your own Lambda Function for Nursing Skill](#2create-your-own-lambda-function-to-your-alexa-skill)
+### [3. Create your own DynamoDB table](#3create-your-own-dynamodb-table)
+### [4. Customizing Nursing Skill](#4customizing-nursing-skill)
+
+## 1.Create Alexa Nursing Skill
 
 This first part you will learn how to create, configure and test a new Alexa Skill using a pre-existing Lambda function as back-end. After this step you will have your first Healthcare Skill working and then you can create your own Lambda function to customize or extend this skill to store different types of biometric data.
 
@@ -85,7 +85,7 @@ This first part you will learn how to create, configure and test a new Alexa Ski
 * Alexa>> Thanks <<Your name>> 
 # ![Nursing Icon](/images/alexa-skill/16.png "instructions")
 
-#### Part 2
+
 ## 2.Create your own Lambda Function to your Alexa Skill
 
 Now that we have our own skill using a pre-existing Lambda function that allows any skill to use it, you will learn how to create
@@ -140,7 +140,7 @@ your own lambda function copying our code and then replace the Lambda ARN in you
 
 ### Step #12: Before testing, we need to create your DynamoDB table!
 
-#### Part 3
+
 ## 3.Create your own DynamoDB table
 
 To finish your Nursing Skill using youtr own Lambda Function you must create a DynamoDB table and 
