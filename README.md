@@ -1,4 +1,4 @@
-!(/images/aws-nursing-icon.png "Nursery Icon")
+![Nursing Icon](/images/aws-nursing-icon.png "Nursery Icon")
 # AWS Alexa Nursing Skill Workshop
 
 A set of e-health workshops to apply AWS technologies for health improving. During this workshop we will show how to develop a Nursing Skill for Alexa to ask about your health data and store into DynamoDB tables.
@@ -10,7 +10,7 @@ You will learn how to build your own Alexa Skills that can be applied for e-heal
 - Weight
 - Blood Exam
 
-# !(/images/aws_new_logo.png "AWS Logo") 
+# ![Nursing Icon](/images/aws_new_logo.png "AWS Logo") 
 
 ## Table of Content
 
@@ -26,50 +26,50 @@ This first part you will learn how to create, configure and test a new Alexa Ski
 <<add an architecture overview>>
 
 ### Step #1: Navigate to Alexa Developer Website
-# !(/images/alexa-skill/01.png "instructions") 
+# ![Nursing Icon](/images/alexa-skill/01.png "instructions") 
 
 ### Step #2: Enter the provided workshop credentials
-# !(/images/alexa-skill/02.png "instructions") 
+# ![Nursing Icon](/images/alexa-skill/02.png "instructions") 
 
 ### Step #3: Click on "Alexa Skills Kit"
-# !(/images/alexa-skill/03.png "instructions") 
+# ![Nursing Icon](/images/alexa-skill/03.png "instructions") 
 
 ### Step #4: Click on "Start a Skill" 
-# !(/images/alexa-skill/04.png "instructions") 
+# ![Nursing Icon](/images/alexa-skill/04.png "instructions") 
 
 ### Step #5: Configure Skill Information
-# !(/images/alexa-skill/05.png "instructions") 
+# ![Nursing Icon](/images/alexa-skill/05.png "instructions") 
 
 ### Step #6: Click on "Launch Skill Builder" 
-# !(/images/alexa-skill/06.png "instructions") 
+# ![Nursing Icon](/images/alexa-skill/06.png "instructions") 
 
 ### Step #7: Copy ![this json](/src/nursing-skill-conversation.json "json") configuration file and paste into code editor 
 
-# !(/images/alexa-skill/07.png "instructions") 
+# ![Nursing Icon](/images/alexa-skill/07.png "instructions") 
 
 ### Step #8: Click "Save Model" and then "Build Model"
-# !(/images/alexa-skill/08.png "instructions") 
+# ![Nursing Icon](/images/alexa-skill/08.png "instructions") 
 
 ### Step #9: Wait until finish..
-# !(/images/alexa-skill/09.png "instructions") 
+# ![Nursing Icon](/images/alexa-skill/09.png "instructions") 
 
 ### Step #10: Click "Configuration" to setup the Lambda Function
-# !(/images/alexa-skill/10.png "instructions") 
+# ![Nursing Icon](/images/alexa-skill/10.png "instructions") 
 
 ### Step #11: We need to provide the Lambda Function ARN in Global Fields
-# !(/images/alexa-skill/11.png "instructions") 
+# ![Nursing Icon](/images/alexa-skill/11.png "instructions") 
 
 ### Step #12: Let's use our existing Lambda Function with this ARN
-# !(/images/alexa-skill/12.png "instructions") 
+# ![Nursing Icon](/images/alexa-skill/12.png "instructions") 
 
 ### Step #13: Your skill configuration should be like this:
-# !(/images/alexa-skill/13.png "instructions")
+# ![Nursing Icon](/images/alexa-skill/13.png "instructions")
 
 ### Step #14: Time to test! Click "Go to Test Simulator"
-# !(/images/alexa-skill/14.png "instructions")
+# ![Nursing Icon](/images/alexa-skill/14.png "instructions")
 
 ### Step #15: Enable test for this skill
-# !(/images/alexa-skill/15.png "instructions")
+# ![Nursing Icon](/images/alexa-skill/15.png "instructions")
 
 ### Step #16: Click in the Mic icon and start the conversation
 
@@ -83,7 +83,7 @@ This first part you will learn how to create, configure and test a new Alexa Ski
 * Alexa>> What is your diastolic pressure <<Your Name>>
 * You>> My diastolic poressure is 75
 * Alexa>> Thanks <<Your name>> 
-# !(/images/alexa-skill/16.png "instructions")
+# ![Nursing Icon](/images/alexa-skill/16.png "instructions")
 
 ## 2.Create your own Lambda Function to your Alexa Skill
 
@@ -91,7 +91,7 @@ Now that we have our own skill using a pre-existing Lambda function that allows 
 your own lambda function copying our code and then replace the Lambda ARN in your Alexa Nursing Skill.
 
 ### Step #1: Create a new Lambda Function, click "New Function"
-# !(/images/alexa-lambda/01.png "instructions") 
+# ![Nursing Icon](/images/alexa-lambda/01.png "instructions") 
 
 ### Step #2: Choose "Author from scratch"
 
@@ -99,7 +99,7 @@ your own lambda function copying our code and then replace the Lambda ARN in you
 * Runtime: NodeJS 6.10
 * Role: Custom Role
 * It will open IAM console to create the role
-# !(/images/alexa-lambda/02.png "instructions") 
+# ![Nursing Icon](/images/alexa-lambda/02.png "instructions") 
 
 ### Step #3: Configure IAM role:
 
@@ -107,35 +107,35 @@ your own lambda function copying our code and then replace the Lambda ARN in you
 * Policy Name: Create new Role Policy
 * Click Allow
 
-# !(/images/alexa-lambda/03.png "instructions") 
+# ![Nursing Icon](/images/alexa-lambda/03.png "instructions") 
 
 ### Step #4: Configure the role in your function
-# !(/images/alexa-lambda/04.png "instructions") 
+# ![Nursing Icon](/images/alexa-lambda/04.png "instructions") 
 
 ### Step #5: Add Alexa Skill Kit trigger
-# !(/images/alexa-lambda/05.png "instructions") 
+# ![Nursing Icon](/images/alexa-lambda/05.png "instructions") 
 
 ### Step #6: Disable Skill ID verification
 
 * This way any skill can use trigger this Lambda. If you want to restrict you can pick you Alexa Nursing Skill ID and limit the execution for only one skill. 
 
-# !(/images/alexa-lambda/07.png "instructions") 
+# ![Nursing Icon](/images/alexa-lambda/07.png "instructions") 
 
 ### Step #7: Copy ![this NodeJS code](/src/nursing-skill.js "js code") and paste into code editor 
 
-# !(/images/alexa-lambda/07.png "instructions") 
+# ![Nursing Icon](/images/alexa-lambda/07.png "instructions") 
 
 ### Step #8: Click "Save"
-# !(/images/alexa-lambda/08.png "instructions") 
+# ![Nursing Icon](/images/alexa-lambda/08.png "instructions") 
 
 ### Step #9: Now you can copy your own Lambda ARN to the clipboard
-# !(/images/alexa-lambda/09.png "instructions") 
+# ![Nursing Icon](/images/alexa-lambda/09.png "instructions") 
 
 ### Step #10: Open your Alexa Developer Console and click "Configuration"
-# !(/images/alexa-lambda/10.png "instructions") 
+# ![Nursing Icon](/images/alexa-lambda/10.png "instructions") 
 
 ### Step #11: Paste the new Lambda ARN
-# !(/images/alexa-lambda/09.png "instructions") 
+# ![Nursing Icon](/images/alexa-lambda/09.png "instructions") 
 
 ### Step #12: Before testing, we need to create your DynamoDB table!
 
@@ -145,23 +145,23 @@ To finish your Nursing Skill using youtr own Lambda Function you must create a D
 make sure that Lambda Function has the right permissions.
 
 ### Step #1: Open DynamoDB Console
-# !(/images/alexa-dynamo/01.png "instructions") 
+# ![Nursing Icon](/images/alexa-dynamo/01.png "instructions") 
 
 ### Step #2: Create healthdata Table
 
 * Table Name: healthdata
 * Primary key: id String
-# !(/images/alexa-dynamo/02.png "instructions") 
+# ![Nursing Icon](/images/alexa-dynamo/02.png "instructions") 
 
 ### Step #3: Done!
 
-# !(/images/alexa-dynamo/03.png "instructions") 
+# ![Nursing Icon](/images/alexa-dynamo/03.png "instructions") 
 
 ### Step #4: Open IAM console to allow your Lambda to access DynamoDB, click Roles and select lambda_basic_execution
-# !(/images/alexa-dynamo/04.png "instructions") 
+# ![Nursing Icon](/images/alexa-dynamo/04.png "instructions") 
 
 ### Step #5: Click Attach Policy
-# !(/images/alexa-dynamo/05.png "instructions") 
+# ![Nursing Icon](/images/alexa-dynamo/05.png "instructions") 
 
 ### Step #6: Select AmazonDynamoDBFullAccess
-# !(/images/alexa-dynamo/06.png "instructions") 
+# ![Nursing Icon](/images/alexa-dynamo/06.png "instructions") 
