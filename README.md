@@ -144,24 +144,24 @@ your own lambda function copying our code and then replace the Lambda ARN in you
 To finish your Nursing Skill using youtr own Lambda Function you must create a DynamoDB table and 
 make sure that Lambda Function has the right permissions.
 
-### Step #1: 
-# ![Nursing Icon](/images/alexa-lambda/01.png "instructions") 
+### Step #1: Open DynamoDB Console
+# ![Nursing Icon](/images/alexa-dynamo/01.png "instructions") 
 
-### Step #2: 
+### Step #2: Create healthdata Table
 
-* Name: NursingSkill
-* Runtime: NodeJS 6.10
-* Role: Custom Role
-* It will open IAM console to create the role
-# ![Nursing Icon](/images/alexa-lambda/02.png "instructions") 
+* Table Name: healthdata
+* Primary key: id String
+# ![Nursing Icon](/images/alexa-dynamo/02.png "instructions") 
 
-### Step #3: 
+### Step #3: Done!
 
-* IAM Role: lambda_basic_execution
-* Policy Name: Create new Role Policy
-* Click Allow
+# ![Nursing Icon](/images/alexa-dynamo/03.png "instructions") 
 
-# ![Nursing Icon](/images/alexa-lambda/03.png "instructions") 
+### Step #4: Open IAM console to allow your Lambda to access DynamoDB, click Roles and select lambda_basic_execution
+# ![Nursing Icon](/images/alexa-dynamo/04.png "instructions") 
 
-### Step #4: 
-# ![Nursing Icon](/images/alexa-lambda/04.png "instructions") 
+### Step #5: Click Attach Policy
+# ![Nursing Icon](/images/alexa-dynamo/05.png "instructions") 
+
+### Step #6: Select AmazonDynamoDBFullAccess
+# ![Nursing Icon](/images/alexa-dynamo/06.png "instructions") 
