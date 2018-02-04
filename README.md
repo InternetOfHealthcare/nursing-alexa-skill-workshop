@@ -189,3 +189,24 @@ make sure that Lambda Function has the right permissions.
 
 ## 4.Customize Nursing Skill
 
+You can also create your own Alexa commands by adding new Intents and Utterances:
+
+### Open DynamoDB Console
+![screenshot](/images/alexa-custsom/01.png "instructions") 
+
+### Open DynamoDB Console
+![screenshot](/images/alexa-custsom/01_.png "instructions") 
+
+### Open DynamoDB Console
+![screenshot](/images/alexa-custsom/02.png "instructions") 
+
+### Open DynamoDB Console
+![screenshot](/images/alexa-custsom/03.png "instructions") 
+
+### Open DynamoDB Console
+![screenshot](/images/alexa-custsom/04.png "instructions") 
+
+### Open DynamoDB Console
+![screenshot](/images/alexa-custsom/05.png "instructions") 
+
+
