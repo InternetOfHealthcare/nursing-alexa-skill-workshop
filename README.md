@@ -187,7 +187,7 @@ make sure that Lambda Function has the right permissions.
 ### Step #6: Select AmazonDynamoDBFullAccess
 ![Nursing Icon](/images/alexa-dynamo/06.png "instructions") 
 
-## 4.Customize Nursing Skill
+## 4.Customizing Nursing Skill
 
 You can also create your own Alexa commands by adding new Intents and Utterances:
 
