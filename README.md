@@ -191,7 +191,7 @@ make sure that Lambda Function has the right permissions.
 ### Step #4: Open IAM console to allow your Lambda to access DynamoDB, click Roles and select lambda_basic_execution
 ![Nursing Icon](/images/alexa-dynamo/04.png "instructions") 
 
-### Step #5: Click Attach Policy
+### Step #5: Select Policy and Click "Attach"
 ![Nursing Icon](/images/alexa-dynamo/05.png "instructions") 
 
 ### Step #6: Select AmazonDynamoDBFullAccess
