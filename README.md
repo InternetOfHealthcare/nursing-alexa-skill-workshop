@@ -209,4 +209,4 @@ You can also create your own Alexa commands by adding new Intents and Utterances
 ### 
 ![screenshot](/images/alexa-custom/05.png "instructions") 
 
-
+## You can try to extend you Alexa Nursing Skill by creating a new Intent and call-back function!
