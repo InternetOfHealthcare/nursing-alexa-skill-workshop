@@ -191,22 +191,22 @@ make sure that Lambda Function has the right permissions.
 
 You can also create your own Alexa commands by adding new Intents and Utterances:
 
-### Open DynamoDB Console
+### An Intent is a set of utterances
 ![screenshot](/images/alexa-custom/01.png "instructions") 
 
-### Open DynamoDB Console
+### Utterances may have slots where you can use as variables...
 ![screenshot](/images/alexa-custom/01_.png "instructions") 
 
-### Open DynamoDB Console
+### A Lambda function will be called for each intent..
 ![screenshot](/images/alexa-custom/02.png "instructions") 
 
-### Open DynamoDB Console
+### For each intent we have a different call-back function...
 ![screenshot](/images/alexa-custom/03.png "instructions") 
 
-### Open DynamoDB Console
+### We can read the slot data this way:
 ![screenshot](/images/alexa-custom/04.png "instructions") 
 
-### Open DynamoDB Console
+### 
 ![screenshot](/images/alexa-custom/05.png "instructions") 
 
 
