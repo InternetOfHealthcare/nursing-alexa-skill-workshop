@@ -17,6 +17,10 @@ The conversation will be like this:
 * Alexa>> Thanks <<Your name>> 
 
 ## Introduction
+
+![logo](/images/alexa_skill.png)
+
+
 You will learn how to build your own Alexa Skills that can be applied for e-health proposal by taking your health data. As example we provide a complete interaction to ask your name and also your blood pressure. But you will learn how to extend and create your own input interactions for:
 - Glucose
 - Emotional State
@@ -24,7 +28,6 @@ You will learn how to build your own Alexa Skills that can be applied for e-heal
 - Blood Exam
 
 
-![logo](/images/alexa_skill.png)
 
 ![logo](/images/aws_new_logo.png)
 
