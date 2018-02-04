@@ -47,14 +47,23 @@ This first part you will learn how to create, configure and test a new Alexa Ski
 ### Step #1: Navigate to Alexa Developer Website
 ![Nursing Icon](/images/alexa-skill/01.png) 
 
-### Step #2: Enter the provided workshop credentials
-![Nursing Icon](/images/alexa-skill/02.png) 
+### Step #2.1: Create your developer.amazon.com user
+![Nursing Icon](/images/alexa-skill/r01.png) 
 
-### Step #3: Click on "Alexa Skills Kit"
-![Nursing Icon](/images/alexa-skill/03.png) 
+### Step #2.2: Accept the license
+![Nursing Icon](/images/alexa-skill/r02.png) 
 
-### Step #4: Click on "Start a Skill" 
-![Nursing Icon](/images/alexa-skill/04.png) 
+### Step #2.3: Click "Save and continue"
+![Nursing Icon](/images/alexa-skill/r03.png) 
+
+### Step #2.4: Click "Alexa" menu
+![Nursing Icon](/images/alexa-skill/r04.png) 
+
+### Step #3: Click "Getting Started" in Alexa Skills Kit
+![Nursing Icon](/images/alexa-skill/r05.png) 
+
+### Step 4: Click "Add a new Skill" 
+![Nursing Icon](/images/alexa-skill/r06.png) 
 
 ### Step #5: Configure Skill Information
 ![Nursing Icon](/images/alexa-skill/05.png "instructions") 
