@@ -192,21 +192,21 @@ make sure that Lambda Function has the right permissions.
 You can also create your own Alexa commands by adding new Intents and Utterances:
 
 ### Open DynamoDB Console
-![screenshot](/images/alexa-custsom/01.png "instructions") 
+![screenshot](/images/alexa-custom/01.png "instructions") 
 
 ### Open DynamoDB Console
-![screenshot](/images/alexa-custsom/01_.png "instructions") 
+![screenshot](/images/alexa-custom/01_.png "instructions") 
 
 ### Open DynamoDB Console
-![screenshot](/images/alexa-custsom/02.png "instructions") 
+![screenshot](/images/alexa-custom/02.png "instructions") 
 
 ### Open DynamoDB Console
-![screenshot](/images/alexa-custsom/03.png "instructions") 
+![screenshot](/images/alexa-custom/03.png "instructions") 
 
 ### Open DynamoDB Console
-![screenshot](/images/alexa-custsom/04.png "instructions") 
+![screenshot](/images/alexa-custom/04.png "instructions") 
 
 ### Open DynamoDB Console
-![screenshot](/images/alexa-custsom/05.png "instructions") 
+![screenshot](/images/alexa-custom/05.png "instructions") 
 
 
