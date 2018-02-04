@@ -16,9 +16,10 @@ The conversation will be like this:
 * You>> My diastolic poressure is 75
 * Alexa>> Thanks <<Your name>> 
 
+![logo](/images/aws_new_logo.png)
+
 ## Introduction
 
-![logo](/images/aws_new_logo.png)
 
 You will learn how to build your own Alexa Skills that can be applied for e-health proposal by taking your health data. As example we provide a complete interaction to ask your name and also your blood pressure. But you will learn how to extend and create your own input interactions for:
 - Glucose
@@ -84,13 +85,13 @@ This first part you will learn how to create, configure and test a new Alexa Ski
 ### Step #10: Click "Configuration" to setup the Lambda Function
 ![Nursing Icon](/images/alexa-skill/10.png "instructions") 
 
-### Step #11: We need to provide the Lambda Function ARN in Global Fields
+### Step #11: We need to provide the Lambda Function ARN in Global Fields. ARN is the address of some existing Lambda function.
 ![Nursing Icon](/images/alexa-skill/11.png "instructions") 
 
-### Step #12: Let's use our existing Lambda Function with this ARN
+### Step #12: Let's use our existing Lambda Function with this ARN. This ARN points to our Lambda in our account.
 ![Nursing Icon](/images/alexa-skill/12.png "instructions") 
 
-### Step #13: Your skill configuration should be like this:
+### Step #13: Your skill configuration should be like this, click "Save" and "Next"
 ![Nursing Icon](/images/alexa-skill/13.png "instructions")
 
 ### Step #14: Time to test! Click "Go to Test Simulator"
@@ -99,7 +100,7 @@ This first part you will learn how to create, configure and test a new Alexa Ski
 ### Step #15: Enable test for this skill
 ![Nursing Icon](/images/alexa-skill/15.png "instructions")
 
-### Step #16: Click in the Mic icon and start the conversation
+### Step #16: Click and hold the Mic icon to start a conversation
 
 * You>> Open nursing skill
 * Alexa>> Welcome to Alexa Nursing Skill, please tell me your name
@@ -119,7 +120,7 @@ This first part you will learn how to create, configure and test a new Alexa Ski
 Now that we have our own skill using a pre-existing Lambda function that allows any skill to use it, you will learn how to create
 your own lambda function copying our code and then replace the Lambda ARN in your Alexa Nursing Skill.
 
-### Step #1: Create a new Lambda Function, click "New Function"
+### Step #1: Create a new Lambda Function, click "Create Function"
 ![Nursing Icon](/images/alexa-lambda/01.png "instructions") 
 
 ### Step #2: Choose "Author from scratch"
@@ -148,7 +149,7 @@ your own lambda function copying our code and then replace the Lambda ARN in you
 
 * This way any skill can use trigger this Lambda. If you want to restrict you can pick you Alexa Nursing Skill ID and limit the execution for only one skill. 
 
-![Nursing Icon](/images/alexa-lambda/07.png "instructions") 
+![Nursing Icon](/images/alexa-lambda/06.png "instructions") 
 
 ### Step #7: Copy ![this NodeJS code](/src/nursing-skill.js "js code") and paste into code editor 
 
