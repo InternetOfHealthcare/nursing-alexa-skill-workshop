@@ -18,8 +18,6 @@ The conversation will be like this:
 
 ## Introduction
 
-![logo](/images/alexa_skill.png)
-
 
 You will learn how to build your own Alexa Skills that can be applied for e-health proposal by taking your health data. As example we provide a complete interaction to ask your name and also your blood pressure. But you will learn how to extend and create your own input interactions for:
 - Glucose
@@ -42,7 +40,9 @@ You will learn how to build your own Alexa Skills that can be applied for e-heal
 
 This first part you will learn how to create, configure and test a new Alexa Skill using a pre-existing Lambda function as back-end. After this step you will have your first Healthcare Skill working and then you can create your own Lambda function to customize or extend this skill to store different types of biometric data.
 
-<<add an architecture overview>>
+![logo](/images/alexa_skill.png)
+
+
 
 ### Step #1: Navigate to Alexa Developer Website
 ![Nursing Icon](/images/alexa-skill/01.png) 
