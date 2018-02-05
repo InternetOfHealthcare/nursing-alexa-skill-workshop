@@ -28,13 +28,6 @@ You will learn how to build your own Alexa Skills that can be applied for e-heal
 - Blood Exam
 
 
-## Before we start: Login qwiklabs
-* Go to qwik website: http://aws.qwiklab.com
-* User faermanj+labXX@amazon.com
-* Password BuildOnAWS
-* Start the lab and get your credentials!
-
-
 ## Table of Content
 
 * [1. Create Alexa "Nursing Skill" using pre-configured Lambda](#1create-alexa-nursing-skill)
