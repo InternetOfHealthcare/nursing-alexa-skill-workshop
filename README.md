@@ -29,7 +29,7 @@ You will learn how to build your own Alexa Skills that can be applied for e-heal
 
 
 ## Before we start: Login qwiklabs
-* [Click here to login AWS Qwik Lab](http://aws.qwiklab.com/)
+* Go to qwik website: http://aws.qwiklab.com
 * User faermanj+labXX@amazon.com
 * Password BuildOnAWS
 * Start the lab and get your credentials!
