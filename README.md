@@ -96,6 +96,7 @@ This first part you will learn how to create, configure and test a new Alexa Ski
 ![Nursing Icon](/images/alexa-skill/11.png "instructions") 
 
 ### Step #12: Let's use our existing Lambda Function with this ARN. This ARN points to our Lambda in our account.
+* Copy and paste this ARN-> arn:aws:lambda:us-east-1:977842192436:function:Nursing
 ![Nursing Icon](/images/alexa-skill/12.png "instructions") 
 
 ### Step #13: Your skill configuration should be like this, click "Save" and "Next"
