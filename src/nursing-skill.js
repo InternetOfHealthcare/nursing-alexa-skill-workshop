@@ -13,37 +13,9 @@ const AWS = require('aws-sdk');
 const dynamoDB = new AWS.DynamoDB.DocumentClient();
 const https = require('https');
 const uuid = require('uuid');
+const iotData = new AWS.IotData({ endpoint: "a2enzbgohiblz2.iot.us-east-1.amazonaws.com" });
 
 var pname,psis, pdia;
-
-function avg(callback) {
-    var table = "patient";
-    var name = "Larry";
-    var params = {
-        TableName: table,
-        Key:{
-            "name": name
-        }
-    };
-    dynamoDB.scan(params, function(err, data) {
-        if (err) {
-            console.error("Unable to read item. Error JSON:", JSON.stringify(err, null, 2));
-            callback(err);
-        } else {
-            var totalElements = data.Items.length;
-            var diastolicAvg=0, sistolicAvg=0;
-            
-            for(var x=0;x<data.Items.length;x++) {
-                diastolicAvg += parseInt(data.Items[x].diastolic,10);
-                sistolicAvg += parseInt(data.Items[x].sistolic,10);
-            }
-            diastolicAvg/=totalElements;
-            sistolicAvg/=totalElements;
-            
-            callback(null, "Sistolic " + Math.floor(sistolicAvg) + " Diastolic " + Math.floor(diastolicAvg));
-        }
-    });
-}
 
 
 
@@ -139,7 +111,7 @@ function setNameInSession(intent, session, callback) {
     if (strName) {
         const nameValue = strName.value;
         sessionAttributes = createNameAttributes(nameValue);
-        speechOutput = `Welcome ${nameValue}. You can tell me ` +
+        speechOutput = `Welcome ${nameValue}. You can ask me ` +
             "things about your health!";
         repromptText = "You can ask me things about your health";
     } else {
@@ -164,6 +136,24 @@ function bloodpressure(intent, session, callback) {
          buildSpeechletResponse(cardTitle, speechOutput, speechOutput, shouldEndSession));
 }
 
+function measureBloodPressure(intent, session, callback) {
+    const cardTitle = intent.name;
+    let sessionAttributes = session.attributes;
+    var params = {
+      topic: 'healthcare/bloodpressure',
+      payload: '{ "on" : true}'
+    }
+    let speechOutput = "Starting blood pressure device";
+    iotData.publish(params, (err, res) => {
+      if (err) return context.fail(err);
+      //return context.succeed();
+
+    });
+    callback(sessionAttributes,
+         buildSpeechletResponse(cardTitle, speechOutput, speechOutput, true));
+
+};
+
 function bloodpressureDiastolic(intent, session, callback) {
     const cardTitle = intent.name;
     const diastolic = intent.slots.diastolic;
@@ -186,19 +176,19 @@ function bloodpressureDiastolic(intent, session, callback) {
 }
 
 function newPatient(callback) {
-	var params = {
-		Item : {
-		    "id" : uuid.v1(),
-			"name" : pname,
-			"sistolic" : psis,
-			"diastolic" : pdia,
-			"time_stamp" : new Date().toString()
-		},
-		TableName : "healthdata"
-	};
-	dynamoDB.put(params, function(err, data){
-		callback(err, data);
-	});
+    var params = {
+        Item : {
+            "id" : uuid.v1(),
+            "name" : pname,
+            "sistolic" : psis,
+            "diastolic" : pdia,
+            "time_stamp" : new Date()
+        },
+        TableName : "patient"
+    };
+    dynamoDB.put(params, function(err, data){
+        callback(err, data);
+    });
 }
 function bloodpressureSistolic(intent, session, callback) {
     const cardTitle = intent.name;
@@ -246,6 +236,58 @@ function getNameFromSession(intent, session, callback) {
          buildSpeechletResponse(intent.name, speechOutput, repromptText, shouldEndSession));
 }
 
+/**
+ * Sets the color in the session and prepares the speech to reply to the user.
+ */
+function setColorInSession(intent, session, callback) {
+    const cardTitle = intent.name;
+    const favoriteColorSlot = intent.slots.Color;
+    let repromptText = '';
+    let sessionAttributes = {};
+    const shouldEndSession = false;
+    let speechOutput = '';
+
+    if (favoriteColorSlot) {
+        const favoriteColor = favoriteColorSlot.value;
+        sessionAttributes = createFavoriteColorAttributes(favoriteColor);
+        speechOutput = `I now know your favorite color is ${favoriteColor}. You can ask me ` +
+            "your favorite color by saying, what's my favorite color?";
+        repromptText = "You can ask me your favorite color by saying, what's my favorite color?";
+    } else {
+        speechOutput = "I'm not sure what your favorite color is. Please try again.";
+        repromptText = "I'm not sure what your favorite color is. You can tell me your " +
+            'favorite color by saying, my favorite color is red';
+    }
+
+    callback(sessionAttributes,
+         buildSpeechletResponse(cardTitle, speechOutput, repromptText, shouldEndSession));
+}
+
+function getColorFromSession(intent, session, callback) {
+    let favoriteColor;
+    const repromptText = null;
+    const sessionAttributes = {};
+    let shouldEndSession = false;
+    let speechOutput = '';
+
+    if (session.attributes) {
+        favoriteColor = session.attributes.favoriteColor;
+    }
+
+    if (favoriteColor) {
+        speechOutput = `Your favorite color is ${favoriteColor}. Goodbye.`;
+        shouldEndSession = true;
+    } else {
+        speechOutput = "I'm not sure what your favorite color is, you can say, my favorite color " +
+            ' is red';
+    }
+
+    // Setting repromptText to null signifies that we do not want to reprompt the user.
+    // If the user does not respond or says something that is not understood, the session
+    // will end.
+    callback(sessionAttributes,
+         buildSpeechletResponse(intent.name, speechOutput, repromptText, shouldEndSession));
+}
 
 
 // --------------- Events -----------------------
@@ -277,7 +319,9 @@ function onIntent(intentRequest, session, callback) {
     const intentName = intentRequest.intent.name;
 
     // Dispatch to your skill's intent handlers
-    if (intentName === 'MyNameIs') {
+    if (intentName === 'MyColorIsIntent') {
+        setColorInSession(intent, session, callback);
+    } else if (intentName === 'MyNameIs') {
         setNameInSession(intent, session, callback);
     } else if (intentName === 'MyBloodPressureIntent') {
         bloodpressure(intent, session, callback);
@@ -287,8 +331,14 @@ function onIntent(intentRequest, session, callback) {
         bloodpressureDiastolic(intent, session, callback);
     } else if (intentName === 'MyWeightIsIntent') {
         setNameInSession(intent, session, callback);
+    } else if (intentName === 'MyNameIs') {
+        setNameInSession(intent, session, callback);
+    } else if (intentName === 'WhatsMyColorIntent') {
+        getColorFromSession(intent, session, callback);
     } else if (intentName === 'WhatsMyNameIntent') {
         getNameFromSession(intent, session, callback);
+    } else if (intentName === 'MeasureBloodPressure') {
+        measureBloodPressure(intent, session, callback);
     } else if (intentName === 'AMAZON.HelpIntent') {
         getWelcomeResponse(callback);
     } else if (intentName === 'AMAZON.StopIntent' || intentName === 'AMAZON.CancelIntent') {
@@ -350,3 +400,32 @@ exports.handler = (event, context, callback) => {
         callback(err);
     }
 };
+
+function avg(callback) {
+    var table = "patient";
+    var name = "Larry";
+    var params = {
+        TableName: table,
+        Key:{
+            "name": name
+        }
+    };
+    dynamoDB.scan(params, function(err, data) {
+        if (err) {
+            console.error("Unable to read item. Error JSON:", JSON.stringify(err, null, 2));
+            callback(err);
+        } else {
+            var totalElements = data.Items.length;
+            var diastolicAvg=0, sistolicAvg=0;
+            
+            for(var x=0;x<data.Items.length;x++) {
+                diastolicAvg += parseInt(data.Items[x].diastolic,10);
+                sistolicAvg += parseInt(data.Items[x].sistolic,10);
+            }
+            diastolicAvg/=totalElements;
+            sistolicAvg/=totalElements;
+            
+            callback(null, "Sistolic " + Math.floor(sistolicAvg) + " Diastolic " + Math.floor(diastolicAvg));
+        }
+    });
+}
