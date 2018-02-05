@@ -184,7 +184,7 @@ function newPatient(callback) {
             "diastolic" : pdia,
             "time_stamp" : new Date()
         },
-        TableName : "patient"
+        TableName : "healthdata"
     };
     dynamoDB.put(params, function(err, data){
         callback(err, data);
