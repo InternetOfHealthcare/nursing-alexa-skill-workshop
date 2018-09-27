@@ -1,0 +1,100 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "cloud experience",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "glucose_status",
+                    "slots": [],
+                    "samples": [
+                        "what is my glucose average",
+                        "what is my glucose status",
+                        "glucose average",
+                        "glucose status"
+                    ]
+                },
+                {
+                    "name": "glucuse_avg_hour",
+                    "slots": [
+                        {
+                            "name": "hourok",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "what is my average glucose at {hourok}",
+                        "blood sugar average at {hourok}",
+                        "glucose average at {hourok}",
+                        "what is my glucose average at {hourok}"
+                    ]
+                },
+                {
+                    "name": "start_bloodpressure_ble",
+                    "slots": [],
+                    "samples": [
+                        "Read my blood pressure",
+                        "Trigger blood pressure device",
+                        "Start blood pressure device"
+                    ]
+                },
+                {
+                    "name": "how_is_my_bloodpressure",
+                    "slots": [],
+                    "samples": [
+                        "ask my blood pressure",
+                        "tell my blood pressure",
+                        "last blood pressure readout",
+                        "what is my blood pressure",
+                        "how is my blood pressure"
+                    ]
+                },
+                {
+                    "name": "how_will_won_world_cup",
+                    "slots": [],
+                    "samples": [
+                        "who will be the world cup champion",
+                        "who will won the world cup"
+                    ]
+                },
+                {
+                    "name": "turn_on_relay",
+                    "slots": [],
+                    "samples": [
+                        "Turn on this fucking lamp",
+                        "Turn on lamp",
+                        "Turn on relay"
+                    ]
+                },
+                {
+                    "name": "turn_off_relay",
+                    "slots": [],
+                    "samples": [
+                        "Turn off lamp",
+                        "Turn off relay"
+                    ]
+                },
+                {
+                    "name": "sample_intent",
+                    "slots": [],
+                    "samples": [
+                        "start Cloud Experience event",
+                        "start Cloud Experience conference"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
