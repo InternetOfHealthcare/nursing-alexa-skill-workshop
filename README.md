@@ -43,76 +43,66 @@ This first part you will learn how to create, configure and test a new Alexa Ski
 
 ![logo](/images/alexa_skill.png)
 
-
-
 ### Step #1: Navigate to Alexa Developer Website: https://developer.amazon.com/alexa
 ![Nursing Icon](/images/alexa-skill/01.png) 
 
-
 ### Step 2: Click "Create your developer account" and fill the basic form
-![Nursing Icon](/images/alexa-skill/03.png) 
-
-### Step #2.1: Log using your created account 
 ![Nursing Icon](/images/alexa-skill/02.png) 
 
+### Step #2.1: Log using your created account 
+![Nursing Icon](/images/alexa-skill/02.1.png) 
+
 ### Step #2.2: After login, click in "Your Alexa Consoles -> Skill" 
-![Nursing Icon](/images/alexa-skill/04.1.png) 
+![Nursing Icon](/images/alexa-skill/02.2.png) 
 
 ### Step #2.3: You will be redirected to complete your account at developer.amazon.com
-![Nursing Icon](/images/alexa-skill/r01.png) 
+![Nursing Icon](/images/alexa-skill/02.3.png) 
 
 ### Step #2.4: Create your Alexa user at developer.amazon.com
-![Nursing Icon](/images/alexa-skill/r01.png) 
+![Nursing Icon](/images/alexa-skill/02.4.png) 
 
 ### Step #2.5: Accept the license
-![Nursing Icon](/images/alexa-skill/r02.png) 
+![Nursing Icon](/images/alexa-skill/02.5.png) 
 
 ### Step #2.6: Click "Save and continue"
-![Nursing Icon](/images/alexa-skill/r03.png) 
+![Nursing Icon](/images/alexa-skill/02.6.png) 
 
 ### Step #2.7: Click "Alexa" menu
-![Nursing Icon](/images/alexa-skill/r04.png) 
+![Nursing Icon](/images/alexa-skill/02.7.png) 
 
 ### Step #3: Navigate back to the Alexa Developer Webiste: https://developer.amazon.com/alexa and click in "Your Consoles Skills"
-![Nursing Icon](/images/alexa-skill/05.png) 
+![Nursing Icon](/images/alexa-skill/03.png) 
 
 ### Step #4: Click "Add a new Skill" 
-![Nursing Icon](/images/alexa-skill/06.png) 
+![Nursing Icon](/images/alexa-skill/04.png) 
 
 ### Step #5: Configure Skill Name with "Nursing Skill" and choose "Custom"
-![Nursing Icon](/images/alexa-skill/07.png "instructions") 
-
+![Nursing Icon](/images/alexa-skill/05.png "instructions") 
 
 ### Step #6: Select "Start from the scratch" and click "Choose" 
-![Nursing Icon](/images/alexa-skill/08.png "instructions") 
+![Nursing Icon](/images/alexa-skill/06.png "instructions") 
 
 ### Step #7: Now we need to complete some tasks to finish our skill as we can see on the right side "Skill Builder CheckList". The invocation name is the one used to open the Alexa Skill, ex. "Alexa Open nursing skill". By default, the invocation name is the Skill name but you can change it.
-![Nursing Icon](/images/alexa-skill/09.png "instructions") 
-
-### Step #8: Copy ![this json](/src/nursing-skill-conversation.json "json") configuration file and paste into code editor 
 ![Nursing Icon](/images/alexa-skill/07.png "instructions") 
 
-
-### Step #8: Click "Save Model" and then "Build Model"
+### Step #8: The invocation name is the one used to open the Alexa Skill, ex. "Alexa Open nursing skill". By default, the invocation name is the Skill name but you can change it.
 ![Nursing Icon](/images/alexa-skill/08.png "instructions") 
 
-### Step #9: Wait until finish..
+### Step #9: Copy ![this json](/src/nursing-skill-conversation.json "json") configuration file and paste into code editor 
 ![Nursing Icon](/images/alexa-skill/09.png "instructions") 
 
-### Step #10: Click "Configuration" to setup the Lambda Function
+### Step #9.1: Click "Save" & "Build Model"
+![Nursing Icon](/images/alexa-skill/09.1.png "instructions") 
+
+
+### Step #10: Click "EWndpoint" and choose "AWS Lambda ARN"
 ![Nursing Icon](/images/alexa-skill/10.png "instructions") 
 
-### Step #11: We need to provide the Lambda Function ARN in Global Fields. ARN is the address of some existing Lambda function.
+### Step #11: Let's use our existing Lambda Function with this ARN. This ARN points to our Lambda in our account.
+* Copy and paste this ARN-> arn:aws:lambda:us-east-1:977842192436:function:Nursing
 ![Nursing Icon](/images/alexa-skill/11.png "instructions") 
 
-### Step #12: Let's use our existing Lambda Function with this ARN. This ARN points to our Lambda in our account.
-* Copy and paste this ARN-> arn:aws:lambda:us-east-1:977842192436:function:Nursing
-![Nursing Icon](/images/alexa-skill/12.png "instructions") 
-
-### Step #13: Your skill configuration should be like this, click "Save" and "Next"
-![Nursing Icon](/images/alexa-skill/13.png "instructions")
-
-### Step #14: Time to test! Click "Go to Test Simulator"
+### Step #12: Time to test! Click "Go to Test Simulator"
 ![Nursing Icon](/images/alexa-skill/14.png "instructions")
 
 ### Step #15: Enable test for this skill
@@ -131,6 +121,15 @@ This first part you will learn how to create, configure and test a new Alexa Ski
 * You>> My diastolic poressure is 75
 * Alexa>> Thanks <<Your name>> 
 # ![Nursing Icon](/images/alexa-skill/16.png "instructions")
+
+
+
+### Step #8: Click "Save Model" and then "Build Model"
+![Nursing Icon](/images/alexa-skill/08.png "instructions") 
+
+### Step #9: Wait until finish..
+![Nursing Icon](/images/alexa-skill/09.png "instructions") 
+
 
 
 ## 2.Create your own Lambda Function to your Alexa Skill
