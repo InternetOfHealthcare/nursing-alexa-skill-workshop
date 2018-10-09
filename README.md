@@ -118,9 +118,8 @@ This first part you will learn how to create, configure and test a new Alexa Ski
 * You>> My diastolic poressure is 75
 * Alexa>> Thanks <<Your name>> 
 
-# PART 2
-
-## 2.Create your own Lambda Function to your Alexa Skill
+# PART 2: Create your own Lambda Function to your Alexa Skill
+## Open your AWS Lambda Console
 
 Now that we have our own skill using a pre-existing Lambda function that allows any skill to use it, you will learn how to create
 your own lambda function copying our code and then replace the Lambda ARN in your Alexa Nursing Skill.
@@ -167,15 +166,16 @@ your own lambda function copying our code and then replace the Lambda ARN in you
 ![Nursing Icon](/images/alexa-lambda/09.png "instructions") 
 
 ### Step #10: Open your Alexa Developer Console and click "Configuration"
-![Nursing Icon](/images/alexa-lambda/10.png "instructions") 
+![Nursing Icon](/images/alexa-skill/11.png "instructions") 
 
 ### Step #11: Paste the new Lambda ARN
-![Nursing Icon](/images/alexa-lambda/09.png "instructions") 
+![Nursing Icon](/images/alexa-skill/11.png "instructions") 
 
 ### Step #12: Before testing, we need to create your DynamoDB table!
 
 
-## 3.Create your own DynamoDB table
+# PART 3 3.Create your own DynamoDB table 
+## Open your AWS Dynamo DB Console
 
 To finish your Nursing Skill using youtr own Lambda Function you must create a DynamoDB table and 
 make sure that Lambda Function has the right permissions.
