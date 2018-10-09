@@ -58,36 +58,40 @@ This first part you will learn how to create, configure and test a new Alexa Ski
 ### Step #2.2: After login, click in "Your Alexa Consoles -> Skill" 
 ![Nursing Icon](/images/alexa-skill/04.1.png) 
 
-### Step #2.1: You will be redirected to complete your account at developer.amazon.com
+### Step #2.3: You will be redirected to complete your account at developer.amazon.com
 ![Nursing Icon](/images/alexa-skill/r01.png) 
 
-### Step #2.1: Create your Alexa user at developer.amazon.com
+### Step #2.4: Create your Alexa user at developer.amazon.com
 ![Nursing Icon](/images/alexa-skill/r01.png) 
 
-### Step #2.2: Accept the license
+### Step #2.5: Accept the license
 ![Nursing Icon](/images/alexa-skill/r02.png) 
 
-### Step #2.3: Click "Save and continue"
+### Step #2.6: Click "Save and continue"
 ![Nursing Icon](/images/alexa-skill/r03.png) 
 
-### Step #2.4: Click "Alexa" menu
+### Step #2.7: Click "Alexa" menu
 ![Nursing Icon](/images/alexa-skill/r04.png) 
 
-### Step #3: Click "Getting Started" in Alexa Skills Kit
-![Nursing Icon](/images/alexa-skill/r05.png) 
+### Step #3: Navigate back to the Alexa Developer Webiste: https://developer.amazon.com/alexa and click in "Your Consoles Skills"
+![Nursing Icon](/images/alexa-skill/05.png) 
 
-### Step 4: Click "Add a new Skill" 
-![Nursing Icon](/images/alexa-skill/r06.png) 
+### Step #4: Click "Add a new Skill" 
+![Nursing Icon](/images/alexa-skill/06.png) 
 
-### Step #5: Configure Skill Information
-![Nursing Icon](/images/alexa-skill/05.png "instructions") 
-
-### Step #6: Click on "Launch Skill Builder" 
-![Nursing Icon](/images/alexa-skill/06.png "instructions") 
-
-### Step #7: Copy ![this json](/src/nursing-skill-conversation.json "json") configuration file and paste into code editor 
-
+### Step #5: Configure Skill Name with "Nursing Skill" and choose "Custom"
 ![Nursing Icon](/images/alexa-skill/07.png "instructions") 
+
+
+### Step #6: Select "Start from the scratch" and click "Choose" 
+![Nursing Icon](/images/alexa-skill/08.png "instructions") 
+
+### Step #7: Now we need to complete some tasks to finish our skill as we can see on the right side "Skill Builder CheckList". The invocation name is the one used to open the Alexa Skill, ex. "Alexa Open nursing skill". By default, the invocation name is the Skill name but you can change it.
+![Nursing Icon](/images/alexa-skill/09.png "instructions") 
+
+### Step #8: Copy ![this json](/src/nursing-skill-conversation.json "json") configuration file and paste into code editor 
+![Nursing Icon](/images/alexa-skill/07.png "instructions") 
+
 
 ### Step #8: Click "Save Model" and then "Build Model"
 ![Nursing Icon](/images/alexa-skill/08.png "instructions") 
